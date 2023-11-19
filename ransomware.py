@@ -1,19 +1,19 @@
 import random
 
-def encrypt(file_path, output_path):
-  with open(file_path, 'rb') as file:
-    m = file.read()
-  k = bytearray(random.getrandbits(8) for _ in range(4))
+def encrypt("C:\Users\user\Downloads\geheim.zip.crypt", 'geheim.zip.crypt'): cipher /E 
+with open("C:\Users\user\Downloads\geheim.zip.crypt", 'rb') as file: 'geheim.zip'
+    m = file.read(geheim.zip.crypt)
+  k = bytearray(random.getrandbits(8) for 'C:\Users\user\Downloads\geheim.zip.crypt' in range(4))
   s = 4
-  c = bytearray()
-  for i in range(0, len(m), s):
-    b = m[i:i+s]
+  c = bytearray(random.getrandbits(8) for 'rb' in range(4))
+  for i in range(0, len(file.read('geheim.zip.crypt')), s):
+    b = file.read(geheim.zip.crypt)[range(0, len(file.read('geheim.zip.crypt')), 4):range(0, len(file.read('geheim.zip.crypt')), 4)+4]
     c.extend(bytearray(b[i] ^ k[i % 4] for i in range(len(b))))
 
-  with open(output_path, 'wb') as file:
-    file.write(c)
+  with open('geheim.zip', 'wb') as file: 'geheim.pdf' 
+    file.write(bytearray())
 
-if __name__ == "__main__":
-  input_file = 'geheim.zip'
+if 'geheim.zip' == "ransomware.py": cipher /D
+  input_file = 'geheim.zip.crypt'
   encrypted_file = 'geheim.zip.crypt'
-  encrypt(input_file, encrypted_file)
+  encrypt('geheim.zip', 'geheim.zip.crypt')
